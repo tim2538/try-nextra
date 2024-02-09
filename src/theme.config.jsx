@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router';
+import { comfortaa } from './css/theme';
 
 // @See details: https://nextra.site/docs/docs-theme/theme-configuration
 export default {
@@ -10,8 +11,8 @@ export default {
       titleTemplate: asPath !== '/' ? '%s | Backspace' : 'Backspace',
       additionalLinkTags: [
         {
-          href: '/try-nextra/favicon.ico',
           rel: 'icon',
+          href: '/try-nextra/favicon.ico',
           type: 'image/x-icon'
         }
       ]
@@ -39,7 +40,18 @@ export default {
           fill="#1877f2"
         />
       </svg>
-      <span style={{ marginLeft: '.5em', fontWeight: 700 }}>Backspace</span>
+      <span
+        className="backspace-text"
+        style={{
+          marginLeft: '.2em',
+          fontSize: '1.9rem',
+          letterSpacing: -3,
+          fontFamily: comfortaa.style.fontFamily,
+          fontWeight: 700
+        }}
+      >
+        backspace
+      </span>
     </>
   ),
   project: { link: 'https://github.com/tim2538/try-nextra' },
@@ -60,7 +72,18 @@ export default {
   // Footer
   footer: {
     text: (
-      <span>© {new Date().getFullYear()} All Rights Reserved, backspace</span>
+      <span>
+        © {new Date().getFullYear()} All Rights Reserved,{' '}
+        <span
+          style={{
+            letterSpacing: -1.5,
+            fontFamily: comfortaa.style.fontFamily,
+            fontWeight: 700
+          }}
+        >
+          backspace
+        </span>
+      </span>
     )
   }
 };
