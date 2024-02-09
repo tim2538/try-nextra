@@ -18,13 +18,13 @@ export default {
   },
   head: (
     <>
+      <link rel="icon" type="image/x-icon" href="/favicon.ico" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta property="og:title" content="Backspace" />
       <meta
         property="og:description"
         content="Work with smiles and happiness"
       />
-      <link rel="Backspace Logo" href="/favicon.ico" />
     </>
   ),
   primaryHue: { light: 220, dark: 210 },
@@ -43,9 +43,11 @@ export default {
     </>
   ),
   project: { link: 'https://github.com/tim2538/try-nextra' },
+  search: { placeholder: 'Search...' },
   // Side bar
   sidebar: { toggleButton: true },
   // TOC Sidebar
+  toc: { backToTop: true },
   editLink: { text: 'Edit this page →' },
   feedback: {
     content: 'Give us feedback →',
