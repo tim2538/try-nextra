@@ -20,7 +20,6 @@ jobs:
         run: |
           npm i
           npm run build
-          npm run export
 
       # Popular action to deploy to GitHub Pages:
       # Docs: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurus
