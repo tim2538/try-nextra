@@ -1,6 +1,6 @@
 # Dependencies
 node_modules
-.env.local
+out
 
 # Generated files
 .next

@@ -4,7 +4,6 @@ const withNextra = require('nextra')({
 });
 
 // If you have other Next.js configurations, you can pass them as the parameter:
-// module.exports = withNextra({ /* other next.js config */ })
 const isProd = process.env.NODE_ENV === 'production';
 
 module.exports = withNextra({
