@@ -6,11 +6,15 @@ export default {
   docsRepositoryBase: 'https://github.com/tim2538/try-nextra/blob/main',
   useNextSeoProps() {
     const { asPath } = useRouter();
-    if (asPath !== '/') {
-      return { titleTemplate: '%s | Backspace' };
-    } else {
-      return { titleTemplate: 'Backspace' };
-    }
+    return {
+      titleTemplate: asPath !== '/' ? '%s | Backspace' : 'Backspace',
+      additionalLinkTags: [
+        {
+          href: '/favicon.ico',
+          rel: 'icon'
+        }
+      ]
+    };
   },
   head: (
     <>

@@ -6,12 +6,7 @@
   },
   "services": {
     "title": "Services",
-    "type": "menu",
-    "items": {
-      "space-project": { "title": "space PROJECT" },
-      "space-document": { "title": "space DOCUMENT" },
-      "space-drop": { "title": "space DROP" }
-    }
+    "type": "page"
   },
   "about": { "title": "About", "type": "page" }
 }
