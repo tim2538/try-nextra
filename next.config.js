@@ -1,6 +1,6 @@
 const withNextra = require('nextra')({
   theme: 'nextra-theme-docs',
-  themeConfig: './theme.config.jsx'
+  themeConfig: './src/theme.config.jsx'
 });
 
 // If you have other Next.js configurations, you can pass them as the parameter:
