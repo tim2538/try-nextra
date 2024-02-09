@@ -10,15 +10,15 @@ export default {
       titleTemplate: asPath !== '/' ? '%s | Backspace' : 'Backspace',
       additionalLinkTags: [
         {
-          href: '/favicon.ico',
-          rel: 'icon'
+          href: '/try-nextra/favicon.ico',
+          rel: 'icon',
+          type: 'image/x-icon'
         }
       ]
     };
   },
   head: (
     <>
-      <link rel="icon" type="image/x-icon" href="/favicon.ico" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta property="og:title" content="Backspace" />
       <meta
