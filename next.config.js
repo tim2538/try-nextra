@@ -12,5 +12,6 @@ module.exports = withNextra({
   assetPrefix: isProd ? '/try-nextra/' : '',
   images: {
     unoptimized: true
-  }
+  },
+  basePath: '/try-nextra'
 });
