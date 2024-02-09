@@ -8,7 +8,8 @@ const withNextra = require('nextra')({
 const isProd = process.env.NODE_ENV === 'production';
 
 module.exports = withNextra({
-  assetPrefix: isProd ? '/your-github-repo-name/' : '',
+  output: 'export',
+  assetPrefix: isProd ? '/try-nextra/' : '',
   images: {
     unoptimized: true
   }
