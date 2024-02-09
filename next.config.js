@@ -9,9 +9,9 @@ const isProd = process.env.NODE_ENV === 'production';
 
 module.exports = withNextra({
   output: 'export',
-  assetPrefix: isProd ? '/try-nextra/' : '',
+  assetPrefix: isProd ? `${process.env.PUBLIC_URL}/` : '',
   images: {
     unoptimized: true
   },
-  basePath: '/try-nextra'
+  basePath: isProd ? `${PUBLIC_URL}` : ''
 });

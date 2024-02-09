@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 // @See details: https://nextra.site/docs/docs-theme/theme-configuration
 export default {
   // Global
-  docsRepositoryBase: 'https://github.com/tim2538/try-nextra/blob/main',
+  docsRepositoryBase: 'https://github.com/tim2538/try-nextra/tree/main',
   useNextSeoProps() {
     const { asPath } = useRouter();
     return {
@@ -18,7 +18,7 @@ export default {
   },
   head: (
     <>
-      <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+      <link rel="icon" type="image/x-icon" href="%PUBLIC_URL%/favicon.ico" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta property="og:title" content="Backspace" />
       <meta
