@@ -1,0 +1,17 @@
+{
+  "index": {
+    "title": "Home",
+    "type": "page",
+    "theme": { "breadcrumb": false, "layout": "full" }
+  },
+  "services": {
+    "title": "Services",
+    "type": "menu",
+    "items": {
+      "space-project": { "title": "space PROJECT" },
+      "space-document": { "title": "space DOCUMENT" },
+      "space-drop": { "title": "space DROP" }
+    }
+  },
+  "about": { "title": "About", "type": "page" }
+}
