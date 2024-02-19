@@ -1,8 +1,8 @@
 import { useRouter } from 'next/router';
-import { comfortaa } from './css/theme';
+import { comfortaa } from './css/font';
 
 // @See details: https://nextra.site/docs/docs-theme/theme-configuration
-export default {
+const config = {
   // Global
   docsRepositoryBase: 'https://github.com/tim2538/try-nextra/tree/main',
   useNextSeoProps() {
@@ -87,3 +87,5 @@ export default {
     )
   }
 };
+
+export default config;
