@@ -8,5 +8,9 @@
     "title": "Services",
     "type": "page"
   },
+  "examples": {
+    "title": "Examples",
+    "type": "page"
+  },
   "about": { "title": "About us", "type": "page" }
 }

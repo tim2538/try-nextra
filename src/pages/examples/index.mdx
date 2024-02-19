@@ -1,0 +1,87 @@
+# Introduction
+
+## MUI component
+
+Let see how to add MUI component
+
+```jsx filename="Typography" showLineNumbers /variant="h5"/ {7}
+import { Typography as MUITypography } from '@mui/material';
+
+export function Typography() {
+  return <MUITypography variant="h5">About us details</MUITypography>;
+}
+
+<Typography />; // Render component
+```
+
+import { Typography as MUITypography } from '@mui/material';
+
+export function Typography() {
+  return <MUITypography variant="h5">About us details</MUITypography>;
+}
+
+<Typography />
+
+```jsx filename="Button" showLineNumbers /useState/ {18}
+import { useState } from 'react';
+import { Button as MUIButton } from '@mui/material';
+
+export function Button({ children }) {
+  const [count, setCount] = useState(0);
+  return (
+    <MUIButton
+      color="primary"
+      variant="outlined"
+      onClick={() => setCount(count + 1)}
+    >
+      {children}
+      {count}
+    </MUIButton>
+  );
+}
+
+<Button>Click: </Button>; // Render component
+```
+
+import { useState } from 'react';
+import { Button as MUIButton } from '@mui/material';
+
+export function Button({ children }) {
+  const [count, setCount] = useState(0);
+  return (
+    <MUIButton
+      color="primary"
+      variant="outlined"
+      onClick={() => setCount(count + 1)}
+    >
+      {children}
+      {count}
+    </MUIButton>
+  );
+}
+
+<Button>Click: </Button>
+
+## Link
+
+You can type link directly to mdx file
+
+```mdx filename="Markdown"
+https://www.google.com
+
+[Link](https://www.google.com)
+```
+
+https://www.google.com
+
+[Link](https://www.google.com)
+
+## Image
+
+Very easy to attach the image
+
+```mdx filename="Image"
+![image](../../assets/Dashboard.png)
+```
+
+![image](../../assets/Dashboard.png)
